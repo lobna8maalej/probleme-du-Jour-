@@ -54,6 +54,6 @@ if(nombre % 2===0 || nombre % 3===0){
 return "true"
 
 }else {
-    return "false"
+    return false
 }
 }
