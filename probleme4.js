@@ -17,8 +17,7 @@ return "differents"
 // si elle est vide, sinon false
 function estvide(chaine){
    if(chaine===""){
-return "true"
-
+return true
 }else{
 
   return  false
@@ -38,8 +37,9 @@ if(vitesse<30){
     return "lent"
 }if(vitesse>30 && vitesse<90){
     return "normal"
-}if(vitesse>90)
-    return "rapide"
+}if(vitesse>90){
+return "rapide"
+}
 }
 
 
