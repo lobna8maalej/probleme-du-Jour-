@@ -35,6 +35,9 @@ while(n>=0){
 function affichenombre(nombre){
 
 
-    while(nombre=10);
+    while(nombre=10){
     return "bonjour"
+
+    };
+    
 }
