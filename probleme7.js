@@ -10,7 +10,7 @@ for (var i=1;i>=expo;i++){
 
 // 2- Écris une fonction afficheDiviseurs qui prend un nombre n et affiche tous ses diviseurs.
 function affichediviseurs(nombre){
-for(var i=0;i>nombre;i++){
+for(var i=0;i<nombre;i++){
     if(n % i === 0){
         console.log(i);
     }
@@ -22,8 +22,10 @@ for(var i=0;i>nombre;i++){
 // 3- Écris une fonction afficheNombresImpaire qui prend un nombre n et affiche tous les nombres impairs de 1 à n.
 
 function afficheNombresImpaire(n){
-for( var i=1;i>n;i++){
-    if(n %3===0){
+var result=""
+
+    for( var i=1;i<n;i++){
+    if(!n %3===0){
         console.log("nombreimpairs")
     }
 }
@@ -34,12 +36,12 @@ for( var i=1;i>n;i++){
 
 function afficheMotInverse(chaine){
 var result=""
-for(var i=0;i<chaine;i++){
-    if(chaine.length-1-i){
+for(var i=0;i>chaine;i++){
+   result=chaine[i]+result;
         console.log(chaine)
     }
 }
 
 return result;
 
-}
+
