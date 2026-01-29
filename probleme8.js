@@ -1,13 +1,13 @@
 // 1- Crée une fonction qui prend un nombre et retourne true s’il est pair, sinon false.
 function affichenombre(n){
-for(var i=0;i<n;i++){
+
     if(n%2===0){
         return true;
     }else{
         return false;
     }
 }
-}
+
 
 
 // 2- Crée une fonction pour inverser une chaîne donnée avec une boucle for
@@ -42,7 +42,7 @@ function supresiontableau(array){
 function divisiblenombre(number){
 
 var result=number
-while(number>1,number<50){
+while(number>1 &&number<50){
     if(number%3===0&&number%5===0){
 
     }number++;
