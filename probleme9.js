@@ -3,10 +3,10 @@ function tableau(tableau,elemntpairs){
 var i=0
 while(i<tableau.length){
 if(tableau[i]%2===0){
-    return elemntpairs
+    
 }i++
 }
-
+ return elemntpairs
 }
 
 
@@ -14,7 +14,7 @@ if(tableau[i]%2===0){
 function nouveautableau(tableau){
 var element=[]
 var result=tableau.length-1;
-for(var i=0;i<tableau.length;i++){
+for(var i=0;i>tableau.length;i--){
 
 }return result.push(tableau[i]);
 
@@ -27,11 +27,11 @@ function nouveautableau(tableau){
 var nombreimpairs=[]
 var i=0
 while(i<tableau.length){
-    if(!tableau[i]%2==0){
-        i++;
-    }return nombreimpairs;
-}
-}
+    if(tableau[i]%2!==0){
+       
+    }
+}i++;
+}return nombreimpairs;
 
 
 // 4- Crée une fonction qui prend un tableau et retourne le nombre d’éléments positifs avec une boucle while.
@@ -51,9 +51,11 @@ function pairtableau(tableau){
 var newtableau=[]
     for(var i=0;i<tableau.length;i++){
 if(i%2===0){
-    return newtableau.push.i
+   newtableau.push.i 
+    
+       
 }
-    }
+    }return newtableau
 
 
 
