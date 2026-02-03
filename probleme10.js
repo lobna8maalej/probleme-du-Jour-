@@ -1,47 +1,49 @@
  // 1 - Écris une fonction nommée removeElement qui prend un tableau et une valeur
  // en paramètres et retourne un nouveau tableau avec la première occurrence
- // de cette valeur supprimée. Si la valeur n’est pas trouvée, retourne le tableau original.
-function removeElement(tableau,valeur){
-newtable=[]
- var valeur=n
+ // de cette valeur supprimée. Si la valeur n’est pas trouvée, retourne le tableau original
+ function removeElement(tableau,valeur){
+var newtable=[]
+var x=tableau.indexof(valeur)
+if(x===-1){
+    return tableau
+}
 for(var i=0;i<tableau.length;i++){
-    if(delete(valeur[index][1])){
-        newtable .push .valeur
-    }else{
-
-
+    if(i!==x){
+        newtable.push(tableau[i])
     }
 }
-   return tableau
-
-}
-
-
+return newtable
+ }
 
  // 2 - Écris une fonction appelée reverseStr qui prend une chaîne de caractères
  // en entrée et retourne l’inverse de chaque lettre suivie d’un nombre
  // en commençant par zéro (à résoudre avec une boucle while).
  // exemple : reverseStr('hello'); ==> "o0l1l2e3h4"
 function reverseStr(chaine){
-var result=str.length-1
-var i=n
-while(i>chaine.length){
+var result=0
+var i=chaine.length-1
+var counter=0
+while(i>=0){
+    result+=chaine[i]+counter
 i--;
-result=result-chaine[i]
-}
-return result;
+counter++;
 }
 
+return result;
+}
 
 
  // 3- Écris une fonction nommée objKey qui prend un objet en paramètre
  //  et retourne un tableau contenant les clés de l’objet.
  // objKey({name:'ahmed', age:20}) ==> ['name','age']
 function objKey(objet){
-tableau={}
-(Array.isArray[objet])
-return tableau;
+  return Object.keys(objet);
 }
+
+ var result=objKey({name:'ahmed', age:20} );   // ← ici on récupère le return
+console.log(result);
+
+
 
 
 // 4- Prends un tableau et supprime chaque deuxième élément de ce tableau.
@@ -49,10 +51,13 @@ return tableau;
 // Exemple :
 // myArr = ['Keep', 'Remove', 'Keep', 'Remove', 'Keep'];
 // removeEveryOther(myArr) ==> ['Keep', 'Keep', 'Keep']
-myarray= [1,2,3,4]
-for (var i=2;i<myarray.length;i++){
-    myarray.splice(i,2)
+
+function removeElement(tableau){
+for(var i=1;i<tableau.length;i++){
+    tableau.splice(i,1)
 }
-console.log(myarray)
+return tableau;
+}
+removeElement([])
 
-
+remove ([])
