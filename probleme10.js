@@ -58,6 +58,6 @@ for(var i=1;i<tableau.length;i++){
 }
 return tableau;
 }
-removeElement([])
+removeElement(['Keep', 'Remove', 'Keep', 'Remove', 'Keep'])
 
 remove ([])
