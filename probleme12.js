@@ -1,7 +1,7 @@
 // 1 - Écrire une fonction qui prend un tableau de chaînes et retourne un tableau contenant la longueur de chaque chaîne.
 function tableau(chaine){
 newtable=[]
-    Each(tableau,func(el,i)){
+    each(tableau,func(el,i)){
     newtable.push(el.length)
 };
 
