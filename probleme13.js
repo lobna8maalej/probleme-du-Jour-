@@ -16,21 +16,21 @@ function map(array, func) {
 
 
 // 1 - Écrire une fonction qui prend un tableau de nombres et retourne un tableau où chaque nombre est augmenté de 10 % en utilisant map.
-function map(array, func) {
-  var result = [];
-  each(array, function (el, i) {
-    result.push(func(el, i));
-  return el*1,1
-  
-  });
-  return result;
+function augmentetableau(tableau){
+ return map(tableau,function(el){
+   return el*1.1
+  })
+
 }
 
 
 // 2 - Écrire une fonction qui prend un tableau de phrases et retourne un tableau contenant le nombre de lettres de chaque phrase (sans compter les espaces) en utilisant each .
+function tableau(lettre,phrase){
+
+}
 var newtable=[]
 var count=0
-function tableau(lettre,phrase){
+{
   each(lettre,function(el,i){
 if(lettre!==""){
   count=count+1
@@ -43,14 +43,12 @@ return newtable
 
 
 // 3 - Écrire une fonction qui prend un tableau de nombres et affiche la moyenne de tous les nombres en utilisant each .
-function tableau(nombres){
+function moyennetableau(tableau){
 var result=0
-each(nombres,function(el,i){
-result=result+el
+  each(tableau,function(el){
+ return result=result+el
 })
-
-return result/i
-
+return result/tableau.length
 }
 
 // 4 - Écrire une fonction appelée agesEnMinutes qui
@@ -58,42 +56,56 @@ return result/i
 //  retourne un nouveau tableau d’objets après avoir converti les âges de années en minutes
 //  en utilisant map.
 // 
-//  var personnes = [{
-//        nom: {
-//              prenom: 'Majd',
-//            secondPrenom: 'Eddin',
-//      },
-//       age: 30
-//       }, {
-//       nom: {
-//             prenom: 'Fatima',
-//             nomFamille: 'Himmamy'
-//        },
-//        age: 26
-//        }, {
-//        nom: {
-//              prenom: 'Sahar',
-//              secondPrenom: 'MHD'
-//        },
-//        age: 27
-//        }, {
-//        nom: {
-//              prenom: 'Nour',
-//              secondPrenom: 'Eddin',
-//        },
-//        age: 15
-//        }, {
-//        nom: {
-//              prenom: 'Ahmad',
-//              nomFamille: 'Awad'
-//        },
-//        age: 33
-//  }];
-// 
-var newobjet={}
-function agesEnMinutes(age){
-  map(age,function(el,i){
-return age.map(el*525600)
-  })
-return newobjet;
+       
+var personnes = [
+  {
+    nom: {
+      prenom: 'Majd',
+      secondPrenom: 'Eddin'
+    },
+    age: 30
+  },
+  {
+    nom: {
+      prenom: 'Fatima',
+      nomFamille: 'Himmamy'
+    },
+    age: 26
+  },
+  {
+    nom: {
+      prenom: 'Sahar',
+      secondPrenom: 'MHD'
+    },
+    age: 27
+  },
+  {
+    nom: {
+      prenom: 'Nour',
+      secondPrenom: 'Eddin'
+    },
+    age: 15
+  },
+  {
+    nom: {
+      prenom: 'Ahmad',
+      nomFamille: 'Awad'
+    },
+    age: 33
+  }
+];
+ 
+function agesEnMinutes(tableau){
+return map(tableau,function(el){
+  return {...
+    el,
+    age:Number(el.age) *525600}
+})
 }
+
+agesEnMinutes([30,26,27,15,33])
+                                    
+
+
+
+
