@@ -41,3 +41,32 @@ function plusLongNom(seauDeParesseux) {
 // - écrire une fonction recherche qui, étant donné une requête (query)
 //   et un tableau de camarades ,
 //   cherche dans le tableau des camarades un camarade « correspondant ».
+function attributscamarades(nom1,nom2,nom3,nom4,nom5){
+
+return {
+nom1:nom1,
+nom2:nom2,
+nom3:nom3,
+nom4:nom4,
+nom5:nom5,
+}
+  
+}
+var camarades=attributscamarades(nedya,khouloud,ahlem,yosra,fatma)
+
+var camarades=[nom1,nom2,nom3,nom4,,nom5,nom6]
+
+function affichercamarades(){
+  return nom1.nom+nom2.nom+nom3.nom+nom4.nom+nom5.nom
+console.log(camarades)
+
+}
+
+function ajoutercamarades(ami){
+var counter=0
+for(var i=0;i<ami.length;i++){
+  counter=counter+1
+}
+
+return counter;
+}
