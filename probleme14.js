@@ -70,8 +70,8 @@ var data = [
 // highestPopulation(data); ==> [{country: "China", population: 1409517397},{country: "India", population: 1339180127}]
 
 function highestPopulation(arrayOfObjects) {
-return arrayOfObjects.filter(function(el){
-return el.pays>500
+return filter(arrayOfObjects,function(el){
+return el.population>500000000
 })
 }
 
@@ -86,8 +86,7 @@ return el.pays>500
 // halveAll(numsArray); ==> [ 1, 3, 10, 4, 7 ]
 
 function halveAll(numbers) {
-var tableau=[]
-  return map(tableau,function(el){
+  return map(numbers,function(el){
 return el/2
   })
 }
@@ -100,13 +99,19 @@ return el/2
 // des valeurs de cet objet.
 // Résolvez cela en utilisant l'une des fonctions utilitaires les plus appropriées (each, map, filter).
 // values({first : 5, second: 'something' , third : 129}) ==> [5, 'something', 129];
-
-function values(obj) {
-var tableau=Object.values(obj)
-each(tableau,function(el){
-console.log(values)
-})
+function each(obj,coll){
+for(var key in obj){
+  coll(obj[key],key)
 }
+}
+function values(obj){
+var result=[]
+  each(obj,function(el){
+result.push(el)
+})
+return result;
+}
+
 
 //=============================================================================
 //                                  Q5
@@ -116,10 +121,12 @@ console.log(values)
 // Résolvez cela en utilisant l'une des fonctions utilitaires les plus appropriées (each, map, filter).
 // shortestString(["hii","s","longest","hi"]) ==> "s"
 
-function shortestString(strings) {
+function shortestString(strings){
+var result=strings[0]
 each(strings,function(el){
-if(strings.length<3){
-  result.push(strings)
-}
+  if(el.length<result.length){
+    result=el
+  }
 })
+return result
 }
