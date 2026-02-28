@@ -4,23 +4,27 @@
  petitGateau : une propriété représentant le nombre de petits gâteaux que votre café peut servir.
 
  Créez une fonction interne servirClient qui sert du café et des petits gâteaux au nombre de clients passé en paramètre.
-*/function creercafe(nombreclient){
+*/
+function creercafe(nombrecafe,nombregateau){
 var starBucks=nombreclient
-}
-function servirclient(nombrecafe,nombregateau){
-    if(nombrecafe>=0){
-        return nombreclient-nombrecafe
+function servirclient(nombreclient){
+    if(nombrecafe<nombreclient){
+        return "nombre cafe insuffisant"
     }else{
-        if(nombregateau>=0){
-            return nombreclient-nombregateau
+        if(nombregateau<nombreclient){
+            return "nombre gateau insuffisant"
         }
-    }if(nombrecafe!==0){
-        return cafeinsuffisant
-    }if(nombregateau!==0){
-        return gateauinsuffisant
+    }if(nombrecafe!==0||nombregateau!==0){
+        return "Nous avons servi 5 clients et il reste 15 cafés et 10 petits gâteaux"
+    }else{
+return 
+    }"Nous n'avons plus de petits gâteaux"
     }
-    
+    return creercafe
 }
+
+
+
 
 // Exemple :
 // var starBucks = creerCafe(20,15);
