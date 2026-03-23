@@ -11,12 +11,16 @@
 
 
 var evenOccurrence = function(arr) {
+  var count=0
   for(var i=0;i<Array.length;i++){
-if(Number[position] %2===0){
+if(Array[i] %2===0){
 console.log(Array)
 }
 else{
-  return null
-}
+  (Array[i]%2!==0)
+    return null
   }
-};
+}
+return Array;
+  }
+
