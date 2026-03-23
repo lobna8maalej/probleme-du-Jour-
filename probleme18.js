@@ -6,21 +6,6 @@
  * var onlyEven = evenOccurrence([1, 7, 2, 4, 5, 6, 8, 9, 6, 4]);
  * console.log(onlyEven); // 4
  */
-//on va faire une condition ou est le nombre pair  on va rechercher par sa position
+//on va voir si le nombre de fois pour un nombre si il est est pair ou non sinon retoune null
 
-
-
-var evenOccurrence = function(arr) {
-  var count=0
-  for(var i=0;i<Array.length;i++){
-if(Array[i] %2===0){
-console.log(Array)
-}
-else{
-  (Array[i]%2!==0)
-    return null
-  }
-}
-return Array;
-  }
 
