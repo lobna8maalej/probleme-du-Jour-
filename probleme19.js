@@ -13,18 +13,16 @@
  *
  * on va faire var result =""
  */ //1ere boucle pour string1
- //2eme boucle pour string2
- //condition if pour verifier si un caractere de string1 existe dans string2
+ //condition if pour verifier si ces caractere de string1 existe dans string2
  // on va faire addition avec string1
  //ON va utiliser break pour eviter d'ajouter plusieurs fois
 var commonCharacters = function(string1, string2) {
-
  var result=""
   for(var i=0;i<string1.length;i++){
-    for(var j=0;j<string2.length;j++){
-      if(string1[i]===string2[j]){
+    {
+      if(string2.includes.string1[i]){
         result=result+string1[i]
-      break;
+      
       }
   }
 }
